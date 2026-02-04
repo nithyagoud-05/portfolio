@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elikatti Nithya Goud | Portfolio</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #64748b;
+      --shadow: rgba(0,0,0,0.08);
+      --shadow-hover: rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: white;
+      text-align: center;
+      padding: 5rem 1.5rem;
+      clip-path: ellipse(100% 100% at 50% 0%);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      border-radius: 2px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px var(--shadow-hover);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skills span {
+      background: #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      transition: transform 0.2s ease;
+    }
+
+    .skills span:hover {
+      transform: scale(1.05);
+      background: var(--accent);
+      color: white;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive Grid for Projects & Hackathons */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    /* Smooth scroll links */
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      section {
+        padding: 3rem 1rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header p {
+        font-size: 1rem;
+      }
+
+      .skills {
+        justify-content: center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Elikatti Nithya Goud</h1>
+    <p>B.Tech (CSE) | C++ • DSA • Hackathons</p>
+  </header>
+
+  <!-- OBJECTIVE -->
+<section>
+  <h2>Objective</h2>
+  <div class="card">
+    <p>
+      Second-year Computer Science undergraduate with strong fundamentals in C++, data structures, and algorithms. 
+      Actively developing problem-solving skills through structured projects,hackathons and practice monitored using 
+      <a href="https://codolio.com/profile/nithyagoud_28" target="_blank">Codolio</a>. 
+      Seeking opportunities to gain hands-on technical experience, apply concepts to real-world problems, 
+      and grow as a well-rounded software engineer.
+    </p>
+  </div>
+</section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>G. Narayanamma Institute of Technology and Science</strong></p>
+      <p>B.Tech in Computer Science (Aug 2024 – Apr 2028)</p>
+      <p><strong>CGPA:</strong> 9.76 / 10.0</p>
+      <p class="muted">Relevant Coursework: Data Structures&Algorithms, DBMS, Object-Oriented Programming</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>C</span>
+      <span>C++</span>
+      <span>Python (Basics)</span>
+      <span>Data Structures & Algorithms</span>
+      <span>OOP</span>
+      <span>DBMS</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Problem Solving</span>
+      <span>GitHub</span>
+      <span>Figma</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <!-- Annapurna Project -->
+    <div class="card">
+      <h3>Annapurna – Food Safety App (Prototype)</h3>
+      <p>
+        Designed a food safety application prototype by translating real-world food safety
+        challenges into structured features and user workflows. Focused on usability, accessibility, and impact.
+      </p>
+      <p><strong>Future Scope:</strong> Extend the prototype into a functional website/mobile application.</p>
+      <p><strong>Tools:</strong> Figma, GitHub</p>
+      <p>
+        <a href="https://github.com/nithyagoud-05/food-safety-app" target="_blank">View Project Repository</a>
+      </p>
+    </div>
+
+    <!-- NASA Space Trash Hack Contribution -->
+    <div class="card">
+      <h3>NASA Space Trash Hack – My Contribution</h3>
+      <p>
+        Part of a 5-member team for the NASA Space Apps Challenge. Focused on building
+        the ML-based waste classification system for plastics, textiles, and metals.
+      </p>
+      <p>
+        <a href="https://github.com/nithyagoud-05/NASA-SpaceTrash-MyContribution" target="_blank">
+          View My Contribution Repository
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- HACKATHONS -->
+<section>
+  <h2>Hackathons & Recognitions</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>NASA Space Apps Challenge'25 – Space Trash Hack</h3>
+      <p>
+        Participated as part of a 5-member team. Our solution for Mars inorganic waste 
+        classification and sorting was shortlisted at the national level and submitted 
+        for international evaluation.
+      </p>
+      <p class="muted">Team project – GitHub repository maintained individually for my contributions.</p>
+    </div>
+    <div class="card">
+      <h3>VNR VJIET Solution Sprint'25</h3>
+      <p>
+        Finalist for the Annapurna food safety prototype, recognized for problem clarity and real-world relevance.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- ACHIEVEMENTS -->
+  <section>
+    <h2>Academic Achievements</h2>
+    <div class="grid">
+      <div class="card">
+        <ul>
+          <li>First Prize – International Essay Writing Competition (INR 1,00,000), BPP University, London</li>
+          <li>Reliance Undergraduate Scholar</li>
+          <li>TS EAMCET'24 Rank – 977</li>
+          <li>97 Percentile in JEE Mains'24</li>
+          <li>JEE Advanced'24 – 102 / 360</li>
+          <li>Qualified NTSE'21 Stage-1 (179 / 200)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience & Leadership</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>App Development Lead – GDG Club, GNITS</h3>
+        <p class="muted">Present</p>
+        <ul>
+          <li>Collaborating with team members to plan and execute technical activities.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Campus Ambassador – Veda Verse</h3>
+        <p class="muted">Dec 2024 – Present</p>
+        <ul>
+          <li>Collaborated with cross-functional teams to promote technical learning initiatives.</li>
+          <li>Planned and executed student engagement activities.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>School Head Girl – Sri Chaitanya Techno School</h3>
+        <p class="muted">Jul 2019 – Feb 2020</p>
+        <ul>
+          <li>Led and represented a student body of 1200+ students.</li>
+          <li>Developed leadership and organizational skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:nithyagoudelikatti@gmail.com">nithyagoudelikatti@gmail.com</a></p>
+      <p>
+        <a href="https://linkedin.com/in/elikatti-nithya-goud" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/nithyagoud-05" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Elikatti Nithya Goud
+  </footer>
+
+</body>
+</html>
